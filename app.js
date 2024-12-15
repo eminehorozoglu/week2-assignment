@@ -37,6 +37,8 @@ createThumbnails(images);
 console.log(createThumbnails);
 thumbnailContainer.addEventListener("click", clear);
 
+
+
 function clear() {
   largethumblecontainer.innerHTML = null;
 }
@@ -55,6 +57,7 @@ function createImage(src, alt, height, widht, classname) {
   newImg.className = classname;
   largethumblecontainer.appendChild(newImg);
 }
+createImage("./beach.jpg", "Its a beautiful Beach", 695, 1550, "beach");
 
 const image1 = document.getElementById("img1");
 image1.addEventListener("click", handleClick1);
